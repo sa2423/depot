@@ -8,8 +8,9 @@
 	<td> <%= image_tag(product.image_url, class: 'list_image') %> </td>
 	<td class = "list_description">
 		<dl>
-			<dt> <%= product.title %> </dt>
-			<dd> <%= truncate(strip_tags(product.description), length: 80) %> </dd>
+			<dt> <%= product.title %> </dt> <br>
+			<dd> <%= truncate(strip_tags(product.description), length: 150) %> </dd> <br>
+			<dd> <%= number_to_currency(product.price) %> </dd>
 		</dl>
 	</td>
 

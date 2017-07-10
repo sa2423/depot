@@ -10,7 +10,11 @@
 		<dl>
 			<dt> <%= product.title %> </dt> <br>
 			<dd> <%= truncate(strip_tags(product.description), length: 150) %> </dd> <br>
-			<dd> <%= number_to_currency(product.price) %> </dd>
+			<dd>
+				<strong> <%= number_to_currency(product.price) %> </strong>
+				<br>
+				<%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+			</dd>
 		</dl>
 	</td>
 

@@ -13,8 +13,10 @@
 	   }
 
 	   .list_image {
-	      width: 60px;
-	      height: 70px;
+  	      display: block;
+	      margin: auto;
+	      width: 90px;
+	      height: 105px;
 	   }
 
 	   .list_description {
@@ -43,9 +45,11 @@
 
 	   .list_line_even {
 	      background: azure;
+	      height: 100px;
 	   }
 
 	   .list_line_odd {
-	      background: honeydew; 
+	      background: honeydew;
+	      height: 100px;  
 	   }
 	}
